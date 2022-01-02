@@ -1,0 +1,24 @@
+{
+  "name": "vue-gulu",
+  "version": "0.0.1",
+  "description": "这是一个UI框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalldd/vue-gulu.git"
+  },
+  "keywords": [
+    "vue",
+    "frame",
+    "ui"
+  ],
+  "author": "aalldd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aalldd/vue-gulu/issues"
+  },
+  "homepage": "https://github.com/aalldd/vue-gulu#readme"
+}
