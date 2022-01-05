@@ -1,37 +1,47 @@
 {
-  "name": "vue-gulu",
-  "version": "0.0.1",
-  "description": "这是一个UI框架",
-  "main": "index.js",
+  "name": "gulu-test-ax",
+  "version": "0.0.3",
+  "description": "这是一个ui框架",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx parcel index.html --no-cache",
+    "dev-test": "parcel watch test/* --no-cache & karma start",
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aalldd/vue-gulu.git"
+    "url": "git+https://github.com/aalldd/gulu-ui.git"
   },
   "keywords": [
     "vue",
-    "frame",
     "ui"
   ],
-  "author": "aalldd",
+  "author": "Daniel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aalldd/vue-gulu/issues"
+    "url": "https://github.com/aalldd/gulu-ui/issues"
   },
-  "homepage": "https://github.com/aalldd/vue-gulu#readme",
+  "homepage": "https://github.com/aalldd/gulu-ui#readme",
   "dependencies": {
-    "vue": "^2.6.14",
+    "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.3.0",
-    "chai": "^4.3.4",
+    "@vue/component-compiler-utils": "^3.2.0",
+    "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.45.2",
-    "vue-template-compiler": "^2.6.14"
+    "karma": "^5.2.3",
+    "karma-chai": "^0.1.0",
+    "karma-chai-spies": "^0.1.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "mocha": "^8.2.1",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.30.0",
+    "sinon": "^9.2.1",
+    "sinon-chai": "^3.5.0",
+    "vue-template-compiler": "^2.6.12"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"

@@ -9,7 +9,12 @@
 </template>
 
 <script>
+import gIcon from './icon.vue'
+
 export default {
+  components: {
+    'g-icon': gIcon
+  },
   props: {
     icon: {},
     loading: {
